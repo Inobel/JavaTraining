@@ -1,0 +1,31 @@
+package cwiczeniemetody;
+import java.io.*;
+
+public class CwiczenieMetody {
+
+  
+    public static void main(String[] args) 
+            throws IOException
+    {
+      BufferedReader br = new BufferedReader(new InputStreamReader (System.in));
+      
+      double temperature;
+      
+        System.out.println("Program sprawdza czy temperatura jest dodatania");
+        System.out.println("");
+        System.out.println("Jaka jest temperatura na zewnątrz?");
+        temperature = Double.parseDouble(br.readLine());
+        
+        boolean isPositive = temperature > 0;
+        
+        if(isPositive)
+        {
+            System.out.println("Temperatura jest dodatnia.");
+        }
+        else
+        {
+            System.out.println("Temperatura jest ujemna.");
+        }
+    }
+    
+}
